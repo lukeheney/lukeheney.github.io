@@ -1,10 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<title>Document</title>
+
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+	h1 {
+		text-align: center;
+		padding: 20px;
+	}
+
+	#petlist {
+		list-style-type: none;
+	}
+
+	#row2 {
+		margin-top: 20px;
+	}
+	#border {
+		border-width: 2px solid black;
+	}
+
+	.container {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.figures {
+		border: 1px solid black;
+		text-align: center;
+
+		#tab 
+		padding-top:30px;
+	}
+
+
+	#battle-container { position: relative; height: 60%;}
+	#to-battle { position: absolute; bottom:0; left: 3px;}
+
+</style>
+
+
 </head>
+
 <body>
-	
+	<div class="container">
+    <div class="row" style="border: 3px solid pink; border-radius: 10px; padding: 5px">
+      <div class="col-md-12">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar">Home</span>
+                <span class="icon-bar">Profile</span>
+                <span class="icon-bar">Leaderboard</span>
+              </button>
+              <h1><a style="text-decoration: none" href="index.html">Pet-Versus</a></h1>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="leaderboard.html">Leaderboards</a></li>
+                <li><a href="sign-in.html">Sign-In/Sign-Up</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+  </div>
+	<div class="container">	
+
+		<h1>Michael's Profile</h1>
+
+		<div class="row">
+
+			<div class="col-md-5"> 
+				<div class="row">
+					<div class="col-md-7"><p>Number of Pets:</p></div>
+					<div class="col-md-2"><p class="figures">3</p></div>
+					<div class="col-md-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-7"><p>Number of Photo's Uploaded:</p></div>
+					<div class="col-md-2"><p class="figures">9</p></div>
+					<div class="col-md-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-7"><p>Number of Wins:</p></div>
+					<div class="col-md-2"><p class="figures">4</p></div>
+					<div class="col-md-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-7"><p>Best Winning Streak:</p></div>
+					<div class="col-md-2"><p class="figures">2</p></div>
+					<div class="col-md-3"></div>
+				</div>
+
+			</div>
+
+			<div class="col-md-1"></div>
+
+			<div class="col-md-4" style="padding: 5px; border-radius: 10px; box-sizing: border-box; border: 2px dotted pink">
+				<div style="height: 400px; max-height: 400px; overflow: hidden;">
+					<img style="width: 100%; height: 100%;" class="img-responsive" src="https://lh5.googleusercontent.com/-RLETKujMZuU/AAAAAAAAAAI/AAAAAAAAAEQ/r_ApQBsSXbk/s0-c-k-no-ns/photo.jpg">
+				</div>
+			</div>
+		</div>
+		<div id="tab">
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Fluffykins</a></li>
+				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Master Tank</a></li>
+				<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Rudiger</a></li>
+				<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Pablo</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="home">
+					<div class="row" id="row2">
+						<div class="col-md-6" style="padding: 5px; border-radius: 10px; box-sizing: border-box; border: 2px dotted pink">
+							
+							<div style="height: 400px; max-height: 400px; overflow: hidden;">
+								<img style="width: 100%; height: 100%;" class="img-responsive" src="https://www.funnypica.com/wp-content/uploads/2012/11/Funny-Cats-Big-Eyed-Cat.jpg">
+							</div>
+						</div>
+
+						<div class="col-md-6" id="battle-container">
+							<div class="row">
+								<div class="col-md-4"><p>Pet Name:</p></div>
+								<div class="col-md-4"><p class="figures">Fluffykins</p></div>
+								<div class="col-md-4"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-4"><p>Pet Gender:</p></div>
+								<div class="col-md-4"><p class="figures">Male</p></div>
+								<div class="col-md-4"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-4"><p>Pet Age:</p></div>
+								<div class="col-md-2"><p class="figures">4</p></div>
+								<div class="col-md-6"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-4"><p>Record(W/L):</p></div>
+								<div class="col-md-2"><p class="figures">8/6</p></div>
+								<div class="col-md-6"></div>
+							</div>
+							<br>
+							<form></form>
+							<label name="submit_new_photo">Upload New Photo</label>
+
+							<input type="url" name="submit_photo" placeholder="enter image url">
+							<br>
+							<button type="submit" name="submit_photo" required class="btn btn-primary">Submit</button>
+							<button id="to-battle" type="submit" class="btn btn-danger"><a href="index.html"To Battle</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</div>
 </body>
 </html>
